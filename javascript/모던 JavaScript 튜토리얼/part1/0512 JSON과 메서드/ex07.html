@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    // 대다수의 경우 JSON.stringify엔 인수를 하나만 넘겨서 사용합니다.
+    //     그런데 순환 참조를 다뤄야 하는 경우같이 전환 프로세스를 정교하게 조정하려면 두 번째 인수를 사용해야 합니다.
+
+    let room = {
+        number: 23
+    };
+
+    let meetup = {
+        title: "Conference",
+        participants: [{name: "John"}, {name: "Alice"}],
+        place: room // meetup은 room을 참조합니다.
+    };
+
+    room.occupiedBy = meetup; // room references meetup
+
+    alert( JSON.stringify(meetup, ['title', 'participants']) );
+    // {"title":"Conference","participants":[{},{}]}
+
+</script>
+
+</html>

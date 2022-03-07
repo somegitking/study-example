@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    // JSON.stringify를 사용할 때 주의하셔야 할 점이 하나 있습니다.
+    // 순환 참조가 있으면 원하는 대로 객체를 문자열로 바꾸는 게 불가능합니다.
+
+    let room = {
+        number: 23
+    };
+
+    let meetup = {
+        title: "Conference",
+        participants: ["john", "ann"]
+    };
+
+    meetup.place = room;       // meetup은 room을 참조합니다.
+    room.occupiedBy = meetup; // room은 meetup을 참조합니다.
+
+    JSON.stringify(meetup); // Error: Converting circular structure to JSON
+
+</script>
+
+</html>

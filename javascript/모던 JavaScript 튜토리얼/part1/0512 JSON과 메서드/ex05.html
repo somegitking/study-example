@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    // JSON.stringify의 장점 중 하나는 중첩 객체도 알아서 문자열로 바꿔준다는 점입니다.
+
+    let meetup = {
+        title: "Conference",
+        room: {
+            number: 23,
+            participants: ["john", "ann"]
+        }
+    };
+
+    alert( JSON.stringify(meetup) );
+    /* 객체 전체가 문자열로 변환되었습니다.
+    {
+      "title":"Conference",
+      "room":{"number":23,"participants":["john","ann"]},
+    }
+    */
+
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+
+    // 순환 참조를 발생시키는 프로퍼티 room.occupiedBy만 제외하고 모든 프로퍼티를 배열에 넣어봅시다.
+
+
+    let room = {
+        number: 23
+    };
+
+    let meetup = {
+        title: "Conference",
+        participants: [{name: "John"}, {name: "Alice"}],
+        place: room // meetup references room
+    };
+
+    room.occupiedBy = meetup; // room references meetup
+
+    alert( JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']) );
+    /*
+    {
+      "title":"Conference",
+      "participants":[{"name":"John"},{"name":"Alice"}],
+      "place":{"number":23}
+    }
+    */
+
+</script>
+
+</html>

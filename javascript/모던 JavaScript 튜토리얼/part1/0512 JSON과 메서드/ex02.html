@@ -9,37 +9,25 @@
 
 </body>
 <script>
-    //객체 student에 JSON.stringify를 적용해봅시다.
-    //객체 -> 문자열
+    // 적용할 수 있는 자료형은 아래와 같습니다.
+    //
+    //     객체 { ... }
+    // 배열 [ ... ]
+    // 원시형:
+    //     문자형
+    // 숫자형
+    // 불린형 값 true와 false
+    // null
 
-    let student = {
-        name: 'John',
-        age: 30,
-        isAdmin: false,
-        courses: ['html', 'css', 'js'],
-        wife: null
-    };
+    // 숫자를 JSON으로 인코딩하면 숫자입니다.
+    alert( JSON.stringify(1) ) // 1
 
-    let json = JSON.stringify(student);
-    console.log(json);
+    // 문자열을 JSON으로 인코딩하면 문자열입니다(다만, 큰따옴표가 추가됩니다).
+    alert( JSON.stringify('test') ) // "test"
 
-    alert(typeof json); // 문자열이네요!
+    alert( JSON.stringify(true) ); // true
 
-    alert(json);
-
-    /* JSON으로 인코딩된 객체:
-    {
-      "name": "John",
-      "age": 30,
-      "isAdmin": false,
-      "courses": ["html", "css", "js"],
-      "wife": null
-    }
-    */
-
-    // 문자열은 큰따옴표로 감싸야 합니다.JSON에선 작은따옴표나 백틱을 사용할 수 없습니다
-    // ('John'이 "John"으로 변경된 것을 통해 이를 확인할 수 있습니다).
-
+    alert( JSON.stringify([1, 2, 3]) ); // [1,2,3]
 </script>
 
 </html>
