@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    //객체 student에 JSON.stringify를 적용해봅시다.
+    //객체 -> 문자열
+
+    let student = {
+        name: 'John',
+        age: 30,
+        isAdmin: false,
+        courses: ['html', 'css', 'js'],
+        wife: null
+    };
+
+    let json = JSON.stringify(student);
+    console.log(json);
+
+    alert(typeof json); // 문자열이네요!
+
+    alert(json);
+
+    /* JSON으로 인코딩된 객체:
+    {
+      "name": "John",
+      "age": 30,
+      "isAdmin": false,
+      "courses": ["html", "css", "js"],
+      "wife": null
+    }
+    */
+
+    // 문자열은 큰따옴표로 감싸야 합니다.JSON에선 작은따옴표나 백틱을 사용할 수 없습니다
+    // ('John'이 "John"으로 변경된 것을 통해 이를 확인할 수 있습니다).
+
+</script>
+
+</html>

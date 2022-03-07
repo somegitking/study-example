@@ -1,0 +1,235 @@
+파트 1
+코어 자바스크립트
+파트1에선 기본 문법부터 객체 지향 프로그래밍과 같은 고급 개념까지 다양한 내용을 학습합니다.
+
+호스트 환경에 종속되지 않는 코어 자바스크립트에 집중할 예정입니다.
+
+소개
+1.1 자바스크립트란?
+1.2 매뉴얼과 명세서
+1.3 코드 에디터
+1.4 개발자 콘솔
+
+자바스크립트 기본
+2.1 Hello, world!
+코드 구조
+엄격 모드
+변수와 상수
+자료형
+alert, prompt, confirm을 이용한 상호작용
+형 변환
+기본 연산자와 수학
+비교 연산자
+if와 '?'를 사용한 조건 처리
+논리 연산자
+nullish 병합 연산자 '??'
+while과 for 반복문
+switch문
+함수
+함수 표현식
+화살표 함수 기본
+기본 문법 요약
+
+코드 품질
+Chrome으로 디버깅하기
+코딩 스타일
+주석
+닌자 코드
+테스트 자동화와 Mocha
+폴리필
+
+객체: 기본
+객체
+참조에 의한 객체 복사
+가비지 컬렉션
+메서드와 this
+new 연산자와 생성자 함수
+옵셔널 체이닝 '?.'
+심볼형
+객체를 원시형으로 변환하기
+
+자료구조와 자료형
+원시값의 메서드
+숫자형
+문자열
+배열
+배열과 메서드
+iterable 객체
+맵과 셋
+위크맵과 위크셋
+Object.keys, values, entries
+구조 분해 할당
+Date 객체와 날짜
+JSON과 메서드
+
+함수 심화학습
+재귀와 스택
+나머지 매개변수와 스프레드 문법
+변수의 유효범위와 클로저
+오래된 'var'
+전역 객체
+객체로서의 함수와 기명 함수 표현식
+new Function 문법
+setTimeout과 setInterval을 이용한 호출 스케줄링
+call/apply와 데코레이터, 포워딩
+함수 바인딩
+화살표 함수 다시 살펴보기
+
+객체 프로퍼티 설정
+프로퍼티 플래그와 설명자
+프로퍼티 getter와 setter
+
+프로토타입과 프로토타입 상속
+프로토타입 상속
+함수의 prototype 프로퍼티
+내장 객체의 프로토타입
+프로토타입 메서드와 __proto__가 없는 객체
+
+클래스
+클래스와 기본 문법
+클래스 상속
+정적 메서드와 정적 프로퍼티
+private, protected 프로퍼티와 메서드
+내장 클래스 확장하기
+'instanceof'로 클래스 확인하기
+믹스인
+에러 핸들링
+
+'try..catch'와 에러 핸들링
+커스텀 에러와 에러 확장
+
+프라미스와 async, await
+콜백
+프라미스
+프라미스 체이닝
+프라미스와 에러 핸들링
+프라미스 API
+프라미스화
+마이크로태스크
+async와 await
+
+제너레이터와 비동기 이터레이션
+제너레이터
+async 이터레이터와 제너레이터
+
+모듈
+모듈 소개
+모듈 내보내고 가져오기
+동적으로 모듈 가져오기
+
+기타
+Proxy와 Reflect
+Eval: 문자열 코드 실행하기
+커링
+참조 타입
+
+
+파트 2
+브라우저: 문서, 이벤트, 인터페이스
+파트2에선 브라우저 내 페이지를 다루는 방법에 대해 학습합니다. 요소 추가, 요소의 사이즈와 위치를 조정하는 방법을 비롯하여 동적으로 인터페이스를 생성하는 방법, 인터페이스를 기반으로 사용자와 상호작용 하는 방법 등에 대해 학습할 예정입니다.
+
+문서
+브라우저 환경과 다양한 명세서
+DOM 트리
+DOM 탐색하기
+getElement*, querySelector*로 요소 검색하기
+주요 노드 프로퍼티
+속성과 프로퍼티
+문서 수정하기
+스타일과 클래스
+요소 사이즈와 스크롤
+브라우저 창 사이즈와 스크롤
+좌표
+이벤트 기초
+
+브라우저 이벤트 소개
+버블링과 캡처링
+이벤트 위임
+브라우저 기본 동작
+커스텀 이벤트 디스패치
+
+UI 이벤트
+마우스 이벤트
+Moving the mouse: mouseover/out, mouseenter/leave
+드래그 앤 드롭과 마우스 이벤트
+Pointer events
+Keyboard: keydown and keyup
+Scrolling
+
+폼과 폼 조작
+폼 프로퍼티와 메서드
+focus와 blur
+이벤트: change, input, cut, copy, paste
+submit 이벤트와 메서드
+
+문서와 리소스 로딩
+DOMContentLoaded, load, beforeunload, unload 이벤트
+defer, async 스크립트
+Resource loading: onload and onerror
+
+기타
+Mutation observer
+Selection and Range
+이벤트 루프와 매크로·마이크로태스크
+
+
+추가 주제
+파트 1과 2에서 다루지 않은 추가 주제를 다룹니다. 파트 3은 순서가 없습니다. 학습을 원하는 주제를 골라 읽으세요.
+
+프레임과 윈도우
+Popups and window methods
+Cross-window communication
+The clickjacking attack
+
+Binary data, files
+ArrayBuffer, binary arrays
+텍스트 디코더와 텍스트 인코더
+Blob
+File and FileReader
+
+네트워크 요청
+fetch
+FormData
+Fetch: Download progress
+Fetch: Abort
+CORS
+Fetch API
+URL objects
+XMLHttpRequest
+파일 업로드 재개하기
+Long polling
+웹소켓
+Server Sent Events
+
+브라우저에 데이터 저장하기
+쿠키와 document.cookie
+localStorage와 sessionStorage
+IndexedDB
+
+애니메이션
+베지어 곡선
+CSS 애니메이션
+JavaScript animations
+
+웹 컴포넌트
+궤도의 높이에서
+Custom elements
+Shadow DOM
+Template element
+Shadow DOM slots, composition
+Shadow DOM styling
+Shadow DOM and events
+
+정규 표현식
+패턴과 플래그
+문자 클래스
+유니코드: 'u' 플래그와 \p{...} 클래스
+앵커: 문자열의 시작 ^과 끝 $
+앵커 ^와 $의 여러 행 모드, 'm' 플래그
+Word boundary: \b
+Escaping, special characters
+Sets and ranges [...]
+Quantifiers +, *, ? and {n}
+Greedy and lazy quantifiers
+Capturing groups
+Backreferences in pattern: \N and \k<name>
